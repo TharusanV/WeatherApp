@@ -1,0 +1,108 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.App::before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: url("./assets/background.jpg") center center/cover no-repeat;  
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.SearchBoxContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.SearchBox{
+  margin-top: 5px;
+  border-radius: 25px;
+  font-size: 15px;
+  padding: 10px;
+  border-width: 1px;
+  border-color: black;
+}
+
+.WeatherInfoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+}
+
+.WeatherInfoContainer .PrimaryData{
+  margin-top: 10px;
+}
+
+.WeatherInfoContainer .PrimaryData .LocationContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.WeatherInfoContainer .PrimaryData .LocationContainer .LocationText{
+  font-size: 2rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.WeatherInfoContainer .PrimaryData .TempContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.WeatherInfoContainer .PrimaryData .TempContainer .TempText{
+  font-size: 6rem;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.WeatherInfoContainer .PrimaryData .WeatherConditionsContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.WeatherInfoContainer .PrimaryData .WeatherConditionsContainer .WeatherConditionText{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.WeatherInfoContainer .SecondaryData{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+
+}
+
+
+.WeatherInfoContainer .SecondaryData .TempFeelsLikeContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.WeatherInfoContainer .SecondaryData .HumidityContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.WeatherInfoContainer .SecondaryData .WindSpeedContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
